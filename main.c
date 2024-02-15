@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 int main(){
 	printf("\t\t\t            $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n"
 		   "\t\t\t           $   wellcome to the c sapper    $\n"
