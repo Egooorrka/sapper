@@ -218,13 +218,16 @@ int showErrors(int num_error) {
   if(num_error == 3) {
     printf("Error #3: Memory allocation error!\n"); // ошибка выделения памяти
   }
-  if(num_error == 7) {
-    printf("Error #7: Inform the Developer!\n"); // Критическая идентифицированная ошибка, природа которой не ясна
-    return -1; // Завершаем выполнение функции, поскольку обычно 7-й ошибкой обозночаются критические
+  if(num_error == 4) {
+    printf("Error #4: Inform the Developer!\n"); // Некритическая идентифицированная ошибка
+  }
+  if(num_error == 5) {
+    printf("Error #5 (CRITICAL!): Inform the Developer!\n"); // Критическая идентифицированная ошибка
+    return -1; // Завершаем выполнение функции
   }
   else {
-    printf("Unidentified error: Inform the Developer!\n"); // Критическая неидентифицированная ошибка, природа которой не ясна
-    return -1; // Завершаем выполнение функции, поскольку природа ошибки не ясна, а значит продолжать - не самая лучшая идея
+    printf("Unidentified error: Inform the Developer!\n"); // Критическая неидентифицированная ошибка
+    return -1; // Завершаем выполнение функции
   }
   return 0;
 }
