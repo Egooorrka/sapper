@@ -1,0 +1,8 @@
+all: sapper
+	
+main.o: main.c
+	gcc -c main.c
+
+workWithUser.o: workWithUser.c
+	gcc -c workWithUser.c
+
